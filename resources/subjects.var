@@ -1,14 +1,71 @@
-+week
-<!ENTITY week{$week} "Getting Started">
-
 +day
 <!ENTITY title{$day} "An Introduction to the Course">
 <!ENTITY abbrev{$day} "course-intro">
+<!ENTITY reading{$day} "">
 
 +day
-<!ENTITY title{$day} "Introduction, continued">
-<!ENTITY abbrev{$day} "intro-continued">
+<!ENTITY title{$day} "An Introduction to Software Engineering and SaaS">
+<!ENTITY abbrev{$day} "intro-saas">
+<!ENTITY reading{$day} "Chapter 1; Sections 10.1-10.2, 7.1, 7.3-7.4">
 
 +day
-<!ENTITY title{$day} "Real Work">
-<!ENTITY abbrev{$day} "real-work">
+<!ENTITY title{$day} "The Ruby Language">
+<!ENTITY abbrev{$day} "ruby">
+<!ENTITY reading{$day} "Chapter 3; Sections 8.1-8.2">
+
++day
+<!ENTITY title{$day} "Ruby on Rails &amp; Software as a Service">
+<!ENTITY abbrev{$day} "rails">
+<!ENTITY reading{$day} "Chapter 2; Chapter 4">
+
++day
+<!ENTITY title{$day} "Ruby on Rails, Continued">
+<!ENTITY abbrev{$day} "rails-continued">
+<!ENTITY reading{$day} "">
+
++day
+<!ENTITY title{$day} "Behavior-Driven Development">
+<!ENTITY abbrev{$day} "bdd">
+<!ENTITY reading{$day} "Sections 7.2; 7.5-7.12">
+
++day
+<!ENTITY title{$day} "Codes of Ethics">
+<!ENTITY abbrev{$day} "ethics">
+<!ENTITY reading{$day} "">
+
++day
+<!ENTITY title{$day} "Test-Driven Development">
+<!ENTITY abbrev{$day} "tdd">
+<!ENTITY reading{$day} "Sections 8.2-8.6; 9.5">
+
++day
+<!ENTITY title{$day} "Pause for Breah ">
+<!ENTITY abbrev{$day} "pause">
+<!ENTITY reading{$day} "">
+
++day
+<!ENTITY title{$day} "Advanced Rails">
+<!ENTITY abbrev{$day} "rails-advanced">
+<!ENTITY reading{$day} "Chapter 5">
+
++day
+<!ENTITY title{$day} "Ethics, Revisited">
+<!ENTITY abbrev{$day} "ethics-revisited">
+<!ENTITY reading{$day} "Selected Articles">
+
++day
+<!ENTITY title{$day} "Agile Project Management and Legacy Code">
+<!ENTITY title{$day} "Legacy Code">
+<!ENTITY abbrev{$day} "legacy">
+<!ENTITY reading{$day} "Chapter 9 and Sections 10.4-10.9">
+
++day
+<!ENTITY title{$day} "Design Patterns for SaaS">
+<!ENTITY abbrev{$day} "saas-patterns">
+<!ENTITY reading{$day} "Chapter 11">
+
++day
+<!ENTITY title{$day} "Course Wrapup">
+<!ENTITY abbrev{$day} "wrapup">
+<!ENTITY reading{$day} "">
+
