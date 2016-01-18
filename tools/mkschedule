@@ -11,6 +11,7 @@
 #     mtwf-spring: A Monday, Tuesday, Wednesday, and Friday spring lab class.
 #     mtwf-spring-mlk, A MWTF spring lab class, with no MLK day
 #     th-fall: Meets Thursday in the fall
+#     321-fall: Meets Tuesday in the fall, using the 321 model
 #     322-fall: Meets Thursday in the fall, using the 322 model
 #     th-spring: Meets Thursday in the spring
 #     mwf-spring: A MWF spring class (no labs)
@@ -156,6 +157,27 @@ elsif ($type eq "lfa-fall") {
   lfaDay();
   bottom();
 } 
+elsif ($type eq "321-fall") {
+  csc321Top();
+  print "<tbody>\n";
+  csc321Day();
+  csc321Day();
+  csc321Day();
+  csc321Day();
+  csc321Day();
+  csc321Day();
+  csc321Day();
+  break("Fall Break", 5); 
+  csc321Day();
+  csc321Day();
+  csc321Day();
+  csc321Day();
+  csc321Day();
+  csc321Day();
+  csc321Day();
+  print "</tbody>\n";
+  bottom();
+}
 elsif ($type eq "322-fall") {
   csc322Top();
   print "<tbody>\n";
@@ -288,6 +310,24 @@ sub day()
       </tr>
 DAY
 } # day
+
+sub csc321Day()
+{
+  $DAY++;
+  $DAY = twoDigits($DAY);
+  print<<"DAY";
+      <tr>
+        <td>$DAY</td>
+        <td>&date$DAY;</td>
+        <td>
+          <ulink url="../outlines/outline.$DAY.html"><emphasis role="strong">&title$DAY;</emphasis></ulink>
+          <xi:include href="overviews/&abbrev$DAY;.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        </td>
+        <td>&reading$DAY;</td>
+        <td>&due$DAY;</td>
+      </tr>
+DAY
+} # csc321Day()
 
 sub csc322Day()
 {
@@ -428,6 +468,31 @@ sub lfaTop()
   <tbody>
 TOP
 } # lfaTop()
+
+# csc321Top()
+#   Print the text at the top of a Fall 321 page
+sub csc321Top()
+{
+  print <<"TOP";
+<section id="schedule"><title>Schedule</title>
+
+<para>
+  <emphasis>This is an <emphasis type="strong">approximate</emphasis>
+  schedule.  Expect things to change, perhaps significantly</emphasis>
+</para>
+
+<table class="schedule">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Date</th>
+      <th width="50%">Topic</th>
+      <th width="15%">Readings</th>
+      <th width="15%">Work Due</th>
+    </tr>
+  </thead>
+TOP
+} # csc321Top()
 
 # csc322Top()
 #   Print the text at the top of a 322 page
