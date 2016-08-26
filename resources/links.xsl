@@ -40,8 +40,8 @@
   [<a href="https://www.railstutorial.org/book">Rails Tutorial</a>]
   [<a href="https://edge.edx.org/courses/course-v1:GrinnellCollege+CS321-1-S16a+2016_Spring/">CSC 321 2016S @ EdX</a>]
   [<a href="http://www.cs.grinnell.edu/~davisjan/csc/321/2015S/">CSC 321 2015S (Davis)</a>]
-  [<a href="http://www.cs.grinnell.edu/~rebelsky/Courses/CSC321/2015F/">CSC 321 2015F (Rebelsky)</a>]
-  [<a href="http://www.cs.grinnell.edu/~rebelsky/Courses/CSC322/2016S/">CSC 322 2016S (Rebelsky)</a>]
+  [<a href="http://www.cs.grinnell.edu/~rebelsky/Courses/CSC321/2016S/">CSC 321 2016S (Rebelsky)</a>]
+  [<a href="http://www.cs.grinnell.edu/~rebelsky/Courses/CSC322/2016F/">CSC 322 2016F (Rebelsky)</a>]
 </p>
 <p class="links"> <b>Misc:</b> 
   [<a href="http://www.cs.grinnell.edu/~rebelsky/">SamR</a>]

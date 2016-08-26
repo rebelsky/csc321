@@ -4,7 +4,7 @@ Front Door
 Introduction
 ------------
 
-Welcome to the Spring 2016 section of Grinnell College's CSC 321,
+Welcome to the Fall 2016 section of Grinnell College's CSC 321,
 *Software Design: Principles and Practices*.  In CSC 321, we build
 your skills in software development to prepare for you to do projects
 in CSC 322 and elsewhere.  The current model of the course focuses on
@@ -36,9 +36,8 @@ to "learn how to learn".  When you are stuck, I recommend that
 you follow the strategy of [you must try, and then you must
 ask](https://blogs.akamai.com/2013/10/you-must-try-and-then-you-must-ask.html).
 
-This semester, we are trying a new approach to the course (including a new
-book).  We will meet three days per week for the first half of the semester.
-You are expected to do about twelve hours of work outside of class each 
+We will meet three days per week for the first half of the semester.
+You are expected to do about twelve hours of work outside of class each
 week (and you may timebox that work).
 
 Learning Goals
@@ -58,17 +57,18 @@ Important Warnings
 ------------------
 
 *Warning!* The Berkeley CS 169 course that forms the underpinnings of
-this course underwent some significant changs last semester, and we
+this course underwent some significant changes recently, and we
 will hit some hicups because of those changes.
 
-*Warning!* I am re-adapting Dr. Davis's course and a new schedule.
+*Warning!* I continue to adapt to a subject that is not my primary
+specialization.
 
-*Warning!* I am unaccustomed to using EdX and my course Web site.  At
+*Warning!* I am unaccustomed to linking EdX and my course Web site.  At
 times, you will find that the EdX site is not up to date.  When that
 happens, please notify me ASAP.
 
 *Warning!* Some students prefer readings.  Some prefer videos.  
-You should try both.
+You should try both for the SaaS stuff.
 
 Basics
 ------
@@ -86,10 +86,7 @@ look at [my normal schedule](http://www.cs.grinnell.edu/~rebelsky/schedule.html)
 for some information.
 
 *Class Mentors*:
-Nora Bresette-Buccino 
-[[bresette](mailto:bresette@grinnell.edu)].
-and Albert Owusu-Asare.
-[[owusuasa](mailto:owusuasa@grinnell.edu)].
+TBD
 Office hours: TBD.
 
 Grading
@@ -160,9 +157,10 @@ I would recommend that you purchase the Kindle edition through Amazon,
 particularly since they are updating the textbook again this semester.
 (With the Kindle Cloud Reader, available at <https://read.amazon.com/>
 or an appropriate app, you should be able to read the book on any
-electronic device.)
+electronic device.)  If you purchase a hardcopy, you should not purchase 
+a used copy, since they've made significant changes.
 
-Hartl, Michael (2015).  _Ruby on Rails Tutorial_ (3rd Edition).  Addison-Wesley.
+Hartl, Michael (2016).  _Ruby on Rails Tutorial_ (4th Edition).  Addison-Wesley.
 
 > The book we'll be using to learn Rails.  Available online at
   <https://www.railstutorial.org/book>
@@ -182,4 +180,5 @@ Citations
 ---------
 
 Many parts of this overview, as well as the overall design of the course, are
-due to Janet Davis.  I have reused materials with her permission.
+due to Janet Davis.  I have reused materials with her permission.  The design
+of the SaaS course is clearly due to Fox and Patterson.
