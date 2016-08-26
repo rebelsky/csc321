@@ -58,7 +58,7 @@
 </div>
 
 <p>
-Copyright &copy; 2014 Samuel A. Rebelsky.  
+Copyright &copy; 2016 Samuel A. Rebelsky.  
 </p>
 
 <p>

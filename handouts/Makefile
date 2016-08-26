@@ -7,6 +7,6 @@ overviews/%.xml: ../outlines/overviews/%.md
 	../tools/overview2xml $^ > $@
 
 schedule.sect: $(MKSCHEDULE)
-	$(MKSCHEDULE) 321-fall > $@
+	$(MKSCHEDULE) mwf-spring-half1 > $@
 
 

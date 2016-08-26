@@ -1,9 +1,9 @@
 <!ENTITY courseid "CSC 321">
 <!ENTITY section "01">
-<!ENTITY semester "2015F">
+<!ENTITY semester "2016S">
 <!ENTITY coursename "Software Development">
 <!ENTITY school "Grinnell College">
-<!ENTITY url "http://www.cs.grinnell.edu/~rebelsky/Courses/CSC321/2015F">
+<!ENTITY url "http://www.cs.grinnell.edu/~rebelsky/Courses/CSC321/2016S">
 <!ENTITY courseurl "&url;">
-<!ENTITY grader "rebelsky@cs.grinnell.edu">
+<!ENTITY grader "rebelsky@grinnell.edu">
 <!ENTITY gcal "CALENDAR">

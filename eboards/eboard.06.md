@@ -1,195 +1,168 @@
-CSC321.01 2015F, Class 06: Behavior-Driven Development
-======================================================
+CSC321.01 2016S, Class 06: User Stories
+=======================================
 
 _Overview_
 
 * Preliminaries.
     * Admin.
     * Upcoming Work.
+    * Good Things to Do.
     * Questions.
-* BDD Basics.
-* Cucumber Basics.
-* Some Examples.
-* Homework time.
+* User stories.
+* Exercise: Developing user stories.
+* Additional work time: Hartl 3.
 
 Preliminaries
 -------------
 
 ### Admin
 
-* We are continuing to hit transition problems.  I'll do my best to
-  help you work through them.
-* Mr. Stone will be teaching next week's class.
+* The Registrar's office wants me to remind you that today is the
+  add/drop deadline.  (Yes, we've moved it forward a week.  Don't
+  blame me)
+* Friday PSA.
 
-### Homework
+### Upcoming Work
 
-* No matter what it says online, your homework is at
-  <https://github.com/saasbook/hw-bdd-cucumber>.  (Agh!  I gave you the
-  wrong one for this week.  Fortunately, none of you started.)
-* You will also be doing some readings on computer ethics for next
-  class.  Expect an email about that tonight (although I think I've 
-  gotten it into the site for now).
+* Reading Journal for Sunday at 8pm.
+    * You have now read three different introductions to Ruby (the Codecademy
+      course, the SaaSbook, and Hartl).  What do you see as the major 
+      differences between the approaches?  What approach do you find
+      most compelling?
+    * Now that you've seen a broader introduction to Ruby, what do you
+      consider the most exciting aspects of working with Ruby?
+    * What aspect of Ruby confused you the most? Try to explain it in 
+      your own words.
+* For Monday: Finish the chapter 3 project.  Send me a link to your GitHub
+  repo.  "CSC 321 Chapter 3 Project (Stu Dent and Par  Tner)"
+* For Monday: Skim Hartl 5 and do any setup you consider necessary.
+* For Wednesday: SaaSBook 2 and 4 (text or video or combination).
+
+### Good Things to Do
+
+#### Academic
+
+* Africans vs African Americans, Noon, Saturday, JRC 101.
+* Franz Schubert's Winterreise, Sunday, 2 p.m. Sebring-Lewis
+* Next week's Rosenfield Symposium on Campaign Finance 
+* Monday, February 8, 4:15 p.m. in Bucksbaum Miriam Langer enjoins you to 
+  "Do Your Work in Public" 
+  (part of the series "Digital in Public: Intellectual and Technical Skills 
+  for Making a Difference")
+* Monday, February 8, 7:30-9:00, JRC 101: The Complex Relation Between 
+  Alcohol and Sexual Assault
+* Noon Tuesday in the White PDR: Bowie, Mickey, and the NFL: Copyright in
+  the 21st century (copies of the reading outside Sam's office)
+* 7:30 pm next Tuesday in ARH 131 - Funding for unfunded internships
+* 4:15 pm next Thursday: Alums!
+* 5:30 pm next Thursday: ACM
+* Anything in next week's Carnival and Creativity series
+
+#### Peer
+
+* Track and Field Grinnell Invite February 6. (11 a.m.)
+
+#### Other
+
+* Social Dance Workshop Tuesdays 7:00-8:00 in Bucksbaum Dance Studio
+  (starting next week)
+* Fill out the Disability Student Space Survey
+  <https://docs.google.com/forms/d/1hIXOjkd1j9goBgoWoDv2EiZu8vhhETOZS3bDTcKypLE/viewform?usp=send_form>
 
 ### Questions
 
-* The only programming homework is hw-bdd-cucumber
-* The only reading is the ethics readings
-* Yes, you still have to journal.
+User Stories
+------------
 
-Behavior-Driven Development
----------------------------
+* What are they?
+* How do we build them?
+* How do we use them?
 
-* What do you see as the key features of BDD?
-* What are the relationships you see between BDD and TDD?  Similarities
-  and differences?
-* Some folks have suggested that we replace TDD with BDD.  Does that
-  seem like a good idea?  Why or why not?
+What are user stories?
 
-Key Features of BDD
+* Narrative descriptions of features that your project needs, typically
+  in the context of a particular audience for your project.
+* Typically in the form "As a ______ I need to be able to ______ so that
+  I can _______."  (Sometimes rearranged.)
+* Should be specific, measurable, achievable, relevant, and more.
 
-* A programmatic mechanism for checking whether programs do what people 
-  want them to do.
-* We think about what the program does in terms of overall behavior.
-  ("Big picture")
-* Typically written in a style that is understandable to non-technical
-  people.  Potentially easier to understand.
-* At least in cucumber, we think about things hierarchically
-    * We break overall utility into features
-    * We break features into scenarios
-    * We break scenarios into steps or declarations
-* In most BDD systems, we focus on user stories
+How do we write user stories?
 
-Similarities between BDD and TDD
+* Interview the client.
+* Record needs.
+* Refine.
+* Refine until it can be done within one sprint.
+* Review with clients.
 
-* Both automated ways to check "if things are working right"
-* Both expect you to express criteria for your tests
-* Both expect you to write criteria *in advance* of writing code
-* Both are video games.  Turn everything green!
+How do we use user stories?
 
-Differences between BDD and TDD
+* Select between them as we plan our sprints.
+* Communicate with the client.
+* Use them as tests for our system.
+* Ask clients to prioritize.
 
-* Difference audience: TDD tests don't have to be written for non-technical
-  people.
-* BDD is often big picture, TDD is often smaller pieces.
-* BDD is a bit easier to tell when you're done.  "Look, the user is happy!"
-* TDD encourages us to focus more on edge cases, whereas BDD is more about
-  general cases (although it does include some edge-like cases)
-* BDD and TDD give different kinds of confirmation
+User Stories Exercise
+---------------------
 
-Should we replace TDD with BDD? (or vice versa)
+_We are developing a new four-year planning system for the College ..._
 
-        As a programmer
-        I want the sqrt function to behave appropriately
-        so that I can write valid code
+* Whole group question: Who are your audiences?
+    * Students (NB)
+    * Faculty members (PW)
+    * Registrar (AM)
+    * Alumni (EM)
+    * SGA (RJHB)
+    * Administrators
+    * Department chairs (SR)
+* We will break into individual groups to conduct user interviews.  
+* We will come back together with the stories we have gathered.
+* Strive for relatively small/narrow stories.  
 
-        For example,
+Stories!
 
-          When I give 4 an input to sqrt
-          Then I expect to get 2 as an output
-          When I give -4 as an input to sqrt
-          Then I expect to get 0+2i as an output
-          Wehn I give "frog" as an input to sqrt
-          Then I expect to get an error message
+* As a student, I want to enter all of my prospective classes for the
+  next four years, so that I can fill in the declaration of major
+  form.
+    * As a student, I want to be able to enter a prospective class and
+      see it on my four-year plan.
+    * As a student, I want to be able to check that it meets the
+      major requirements for my declaration of major form.
+         * As a student, I want to be able to check that the semester
+           I plan to take a course is the semester that it is offered
+           so that I can be confident that my schedule is viable.
+             * In particular, I want to make sure that CSC 321 is offered
+               in fall 2017 given the current department plans.
+* As a student, I'd like to be able to track progress toward my major so
+  that I can graduate in time.
+     * As a student, I'd like to see a check box for each requirement
+       I have met (green) and a note for each requirement I have not met
+       (red).
+* As Dean, I want to see the distribution of classes, so that I can 
+  make sure that there is sufficient staffing in each department.
+* As a _, I want to _, so that I can _.
+* As a _, I want to _, so that I can _.
+* As a _, I want to _, so that I can _.
+* As a _, I want to _, so that I can _.
+* As a _, I want to _, so that I can _.
+* As a _, I want to _, so that I can _.
 
-        check_equal(2, sqrt(4));
-        check_equal(imaginary(0,2), sqrt(-4));
+Debrief
 
-Arguments for:
-
-* You can show your client (or your manager) something that he/she/ze
-  can understand.
-* Learning one system well is easier than learning two systems well.
-
-Arguments against:
-
-* We're programmers, we don't need such verbose "code"
-    * BDD seems to have much more running time overhead
-* Different intent, so use different systems; use things how they are
-  designed.  "If all you have is BDD, everything is a behavior."
-    * TDD system features are likely to be different than BDD features; 
-      use the things that have the right features.
-* Don't abuse tools  (don't hack things to make them work for something else)
-    * BDD shouldn't be technical testing
-* Separate domains!  
-    * Two ways to think about the example above: Programmer and Client
-
-Cucumber
---------
-
-* As we think about behaviors, will we need to work on the model, the
-  view, or the controller?
-* What changes are we likely to have to make?
-* What step definitions will we have to write to get the text to 
-  call Ruby/Rails code?
-
-<pre>
-Feature: search for movies by director
-
-  As a movie buff
-  So that I can find movies with my favorite director
-  I want to include and search on director information in movies I enter
-</pre>
-
-<pre>
-Background: movies in database
-
-  Given the following movies exist:
-  | title        | rating | director     | release_date |
-  | Star Wars    | PG     | George Lucas |   1977-05-25 |
-  | Blade Runner | PG     | Ridley Scott |   1982-06-25 |
-  | Alien        | R      |              |   1979-05-25 |
-  | THX-1138     | R      | George Lucas |   1971-03-11 |
-</pre>
-
-* Model, View, and/or Controller?
-    * Model
-    * View (implicit)
-* What changes to M, V, C?
-    * Model: Add a new field, Director using the wonders of Migration
-    * View (implicit): You need to be able to see the new field in the
-      listing of movies.
-* Step definition?
-    movies.each do |movie| addMovie movie.title, movie.rating, ... end
-
-<pre>
-Scenario: add director to existing movie
-  When I go to the edit page for "Alien"
-  And  I fill in "Director" with "Ridley Scott"
-  And  I press "Update Movie Info"
-  Then the director of "Alien" should be "Ridley Scott"
-</pre>
-
-* Model, View, or Controller (plus changes)
-    * View: The edit page needs a text field named "Director".
-    * View: The "Update Movie Info" button might need to be changed.
-      (maybe not, depending on how we phrase the query it makes)
-    * Controller: The update method may need to be changed to
-      include the director.
-    * Model: We changed it above.  
-* Step definition?
-    * /^I go to the edit page for "([^"]*)"$/, should be built into
-      Capabyra.  
-    * /^I fill in "([^"]*)" with "([^"]*)"$/, shuld be built into
-      Capabyra.
-    * /^I press "([^"]*)"$/, should be built into Capabyra
-    * Then the director of "Alien" should be "Ridley Scott"
-        * Simple database query
-
-<pre>
-Scenario: find movie with same director
-  Given I am on the details page for "Star Wars"
-  When  I follow "Find Movies With Same Director"
-  Then  I should be on the Similar Movies page for "Star Wars"
-  And   I should see "THX-1138"
-  But   I should not see "Blade Runner"
-
-Scenario: can't find similar movies if we don't know director (sad path)
-  Given I am on the details page for "Alien"
-  Then  I should not see "Ridley Scott"
-  When  I follow "Find Movies With Same Director"
-  Then  I should be on the home page
-  And   I should see "'Alien' has no director info"
-</pre>
+* Knowing that you need to keep asking questions
+* It's easy to think about think about things that I want when you
+  are pretending to be someone else.  But you really want to talk
+  to the real person.
+* A lot of ambiguity 
+    * From your manager (resolve by talking)
+    * From your client (resolve by user stories)
+* The order in which people describe things may suggest something about
+  importance.
+* With appropriate prompts, you can get your client to come up with new
+  ideas (some times more than you would ever want to implement)
 
 Work Time
 ---------
+
+_Continue working on Hartl 3._
+
+_Sam notes that next time I should just do user stories._

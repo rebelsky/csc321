@@ -1,3 +1,17 @@
+Refactoring, Revisited
+----------------------
+
+* As we noted, we use refactoring to improve code, particularly code that
+  smells bad.  We'll consider a few of the bad smells you identified and
+  consider how to approach them.
+* Nearly identical code (within a procedure): 
+* Nearly identical code (similar procedures):
+* Too many parameters:
+* Magic numbers: 
+* Complex conditionals:
+* Code that is never executed: 
+* Too-long methods: 
+
 Design Patterns
 ---------------
 
@@ -13,18 +27,8 @@ Design Patterns
 * There are growing movements to write "patterns" (and "anti-patterns")
   for many different classes of problems.  There are even teaching
   patterns.
-
-SOLID Principles
-----------------
-
-Intended as a mechanism for thinking about class design.  Five basic
-principles.
-
-* Single Responsibility - Do one thing well.
-* Open/Closed - Open for extension, closed against modification.
-* Liskov Substitution Priniplce - T's subclasses follow the interface
-* Dependency Injection 
-* Demeter -
+* Most folks at Grinnell believe that you apply patterns loosely; they are
+  intended as a way to help you think, rather than strict strategies.
 
 Patterns
 --------

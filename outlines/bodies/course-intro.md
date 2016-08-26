@@ -1,3 +1,8 @@
+Quiz!
+-----
+
+Take the quiz while you are waiting for SamR to show up.
+
 What is this course?
 --------------------
 
@@ -28,10 +33,3 @@ Course structure
 * What surprises you about the syllabus?
 * What questions do you have?
 
-Work time
----------
-
-* Sign up for the various services.  (See email.)
-* Take Quiz 0 on the SPOC.  It's okay if you know none of the things
-  listed.  (I knew very few a year ago.)
-* Start learning Ruby.

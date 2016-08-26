@@ -1,21 +1,53 @@
+Lessons from Modeling Exercise
+------------------------------
+
+What do you take as the key lessons from the modeling exercise?
+
+* Think about the types of your data.
+* IDs are useful.
+* Symmetric one-many relationships are a many-many relationship.
+* We often represent many-many relationships with a table.
+* If we write about the relationships, a smart program can figure
+  out how to represent it in a table.
+* We need to cross our fingers that the DBMS does things sensibly.
+    * Example, cross references.
+
 Behavior-Driven Development
 ---------------------------
 
 * What do you see as the key features of BDD?
-* What's the difference between BDD and TDD?
-* Some folks have suggested that we replaced TDD with BDD.  Does that
-  seem like a good idea?  Why or why not?
+* What differences do you see between BDD and TDD?
+* What are some potential disadvatnages of BDD?
 
-Cucumber
---------
+Cucumber Basics
+---------------
 
-Let's walk through some scenarios and think about what work we'll have to
-do to implement these Cucumber scenarios.  In particular, do we change
-model, view, or controller?  Do we have to add any step definitions.
-And how do we change whichever we change?
+* A programmatic approach to Behavior-Driven Design
+* Often viewed in terms of a "testing stack"
 
-We'll work conceptually for the first hour and then give you a chance
-to work on the homework together in the second hour.
+        Features
+        Scenarios
+        Steps
+
+        Step Definitions
+        Support Code
+        Automation Library
+
+* *Features*, *scenarios*, and *steps* give the high-level limited-form 
+  natural-language definition of aspects of the user story.
+* *Step definitions* indicate how to translate the steps to procedure
+  calls.  (Yay pattern matching!)
+* *Support code* helps implement some of those caclls.
+* The *automation library* deals with common things, like fetching pages.
+  We often use Capybara to help with automation.
+
+A Cucumber Example
+------------------
+
+Let's walk through some scenarios and think about what work we might have
+to do to implement these Cucumber scenarios.  Do they effect model, view,
+or controller (or all three)?  (Suppose we had the repaired version of
+the original database, with no director.)
 
 <pre>
 Feature: search for movies by director
@@ -53,3 +85,20 @@ Scenario: can't find similar movies if we don't know director (sad path)
   Then  I should be on the home page
   And   I should see "'Alien' has no director info"
 </pre>
+
+Cucumber in Practice
+--------------------
+
+* Our alums tell me that Cucumber has been less successful than
+  people had expected.
+* Ideal: Clients can write user stories. 
+    * Reality: Clients can read user stories.
+    * Reality: Programmers have to write user stories.
+* "Natural language" descriptions seem like a good idea, but managing
+  three sets of files (use cases, patterns that translate to real test
+  code, real test code) can be problematic.
+* Automatic database setup is nice, but there are other Gems, such
+  as FactoryGirl, that also help with database setup.
+* I will not require you to write explicit Cucumber tests, but I will
+  expect you to write use cases and to write tests (in RSpec or Minitest)
+  that correspond to those use cases.

@@ -37,10 +37,11 @@
   [<a href="https://www.codecademy.com/tracks/ruby">Ruby@CodeCademy</a>]
 </p>
 <p class="links"><b>Related Courses:</b>
-  [<a href="https://edge.edx.org/courses/course-v1:GrinnellCollege+CS321-1-F15+2015_Fall/">CSC 321 2015F @ EdX</a>]
-  [<a href="https://courses.edx.org/courses/BerkeleyX/CS-CS169.1x/3T2014/info">Berkeley CS 169 2014F</a>]
+  [<a href="https://www.railstutorial.org/book">Rails Tutorial</a>]
+  [<a href="https://edge.edx.org/courses/course-v1:GrinnellCollege+CS321-1-S16a+2016_Spring/">CSC 321 2016S @ EdX</a>]
   [<a href="http://www.cs.grinnell.edu/~davisjan/csc/321/2015S/">CSC 321 2015S (Davis)</a>]
-  [<a href="http://www.cs.grinnell.edu/~rebelsky/Courses/CSC322/2015F/">CSC 322 2015F (Rebelsky)</a>]
+  [<a href="http://www.cs.grinnell.edu/~rebelsky/Courses/CSC321/2015F/">CSC 321 2015F (Rebelsky)</a>]
+  [<a href="http://www.cs.grinnell.edu/~rebelsky/Courses/CSC322/2016S/">CSC 322 2016S (Rebelsky)</a>]
 </p>
 <p class="links"> <b>Misc:</b> 
   [<a href="http://www.cs.grinnell.edu/~rebelsky/">SamR</a>]

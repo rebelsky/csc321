@@ -1,100 +1,159 @@
-CSC321.01 2015F, Class 05: Ruby on Rails, Continued
-===================================================
+CSC321.01 2016S, Class 05: An Introduction to Software Engineering
+==================================================================
 
 _Overview_
 
 * Preliminaries.
     * Admin.
-* Thinking about adding features.
-* Adding a sort feature.
-* Adding a filter feature.
-* Adding simple persistence.
-* Adding complex persistence.
-* Putting it all together.
+    * Upcoming Work.
+    * Extra Credit.
+    * Questions.
+* The Semi-Flipped Classroom.
+* Software Engineering: An Overview.
+* Thoughts from the Readings.
+* User Stories.
+* User Stories Applied.
 
 Preliminaries
 -------------
 
 ### Admin
 
-* We are continuing to hit transition problems.  I'll do my best to
-  help you work through them.
-    * We'll work through the rest of HW2 in class today.
-    * I have time reserved on Saturday to work through the new Chapter 7 
-      examples (hopefully in advance of when you'll be doing them).
-* We will be temporarily skipping over chapters 5 and 6 to move on to BDD.
-    * Because we have a half-class, we may not come back to chapter 6.
-* No matter what it says online, your next homework is at
-  <https://github.com/saasbook/hw-bdd-tdd-cycle>.  
-    * When cloning, clone `hw-bdd-tdd-cycle`, not `bdd-tdd-cycle.`
+* Please sign up for the EdX class at
+  <https://edge.edx.org/courses/course-v1:GrinnellCollege+CS321-1-S16a+2016_Spring/about>
+* I've probably planned too much for today.
+* Reminders
+    * Attendance is required
+    * Journals are required (except when they are not assigned)
+
+### Upcoming Work
+
+* NO READING JOURNAL FOR FRIDAY.
+* No need to do quizzes etc. on EdX site.
+* For Friday: SaaSbook chapter 3 (or corresponding videos on EdX site).
+* For Friday: Hartl chapter 4 (which has almost no programming)
+* In class Friday: Finish the chapter 3 project.
+
+### Good Things to Do
+
+#### Academic
+
+* CS Extras Thursday in 3813.  (LaTeX)
+* ACM Chapter Meeting after CS extras.
+* CS Table Tuesday.  (Bowie, Mickey, and ...)
+* Various internship workshops
+
+#### Peer
+
+* Track meet on February 6 at 10 a.m. in the "Your name here for only
+  $1M field house".
 
 ### Questions
 
-_Can we feel free to ignore the stupid things on the Web site?_
+The Semi-Flipped Classroom
+--------------------------
 
-> Yes.
+What was the experience of watching a video?
 
-_Will you ever fix the quizzes?_
+* Speeding up and reading along was nice.
 
-> Maybe.
+* Using a xMOOC as one of our resources
+* Using online tutorials as primary resources
+* Mostly without too much front-of-the-room chatter
 
-Thinking about adding features
-------------------------------
+* We are doing this in part to help you think about different ways of
+  learning.
 
-* Remember: Rails uses MVC 
-* Every feature change suggests that you ask
-    * Do I have to change the model?  If so, how?
-    * I probably have to change the controller.  How?
-    * Do I have to change the view?  If so, how?
-* How does the view communicate this to the controller?
-    * Through the URL or the query string
+Confusions
 
-Adding a sort feature
----------------------
+* How do we do this in pairs?
+    * Goal: You work together in class AND outside of class until the
+      problem is completed.  You send the completed problem to me.
 
-* Changes to the model?
-    * Nope.
-* Changes to the controller?
-    * We'll need to change the part of the controller that makes the
-      list of movies.
-    * Was `@movies = Movie.all`
-    * Replace by `@movies = Movie.order(:title => :asc)`
-* Changes to the view?
-    * Trigger in the view to set off the controller
-       * Change the link
-         `%th{:class => title_header, :id => "Title"} = link_to "Movie Title", movies_path(:sort_by => 'title')`
-       * Generates
-         `<th class="..." id="Title"><a href="...">Movie Title</a></td>`
-    * Visual feedback as to the change
-* Communicate changes
-    * Different URL
-    * params[:sort_by]
+Software Engineering: An Overview
+---------------------------------
 
-Adding a filter feature
------------------------
+* We saw three methodologies in the reading:
+     * Plan and Document
+         * Waterfall
+         * Spiral
+     * Agile
+* What are the steps in one "round" of each?
+     * Waterfall
+         * Gather requirements from client
+         * Document everything (and get approval from client)
+         * Schedule the implementation
+         * Implement
+         * Test
+         * Deploy to client
+         * Maintain
+     * Spiral
+         * Determine objectives for this iteration (with client)
+         * Evaluate alternatives and risks
+         * Develop and verify prototype (with client)
+         * Plan again
+     * Agile (a two week sprint)
+         * Talk to client
+         * Plan (key tasks; assign people)
+         * Write tests
+         * Develop stuff
+         * Show to client
+* How are they similar?
+    * Both produce code
+    * Both spiral and agile assume that you will do multiple cycles
+      so you don't have to do everything at once
+    * It's software design; everything takes too long
+* How do they differ?
+    * Very different iteration lengths (agile one or two weeks; spiral
+      a few months; waterfall: a year or more)
+    * Involvement of client (more involvement in agile); more human
+      interaction (also in terms of pair programming and such)
+    * Granularity of planning 
+    * Agile seems to work better if you're a small f2f group; because
+      it relies on interpersonal communication, things break down in
+      situations in which such communication is harder
 
-* Changes to the model
-    * The model needs to tell us what the valid ratings are
-        class Movie < ActiveRecord::Base
-          def self.all_ratings
-            ["G", "PG", "PG-13", "NC-17", "R", "Z"]
-          end
-        end
-* Changes to the controller
-    * Get information from the view (`params[:ratings]`)
-    * `Movie.where(rating: ...).order(...)`
-    * Communicate the valid ratings to the view
-      `@ratings = Movie.all_ratings`
-* Changes to the view
-    * Add a way to select filtering criteria (in the assignment)
-    * Add that to the queries we make (need to Google forms in 
-      haml)
-    * Have the controller communicate back to us which of the ratings
-      are selected
+Why don't people like agile?
 
-Adding persistence
-------------------
+* It's new.  We've always done it one way.  It must be *the* way.
+* Who wants to deal with people?
+* Doesn't meet some situations, such as programs whose requirements
+  are unlikely to change.  (E.g., NASA)
+* Can be hard for developers who like a stable situation.
+* Anyone who believes that software engineering is really engineering.
+* May be easier to join a project with lots of documentation.
+* Tests are not good specs.  Math gives us more confidence that things
+  are correct.
 
-Putting it all together
------------------------
+These days, most medium projects show great benefit from agile, and it
+keeps modern programmers happier.
+
+What are the key agile practices?
+
+* User stories - Client requirements in a particular form
+* Small teams
+* Tests and stories as documentation
+* Small tasks
+* Short iterations
+* Pair programming
+* Stand up meetings - discuss what has been accomplished and obstacles
+  (usually standing, so they are fast)
+* Focus on "working" software and then building on it
+* Standards
+* TDD
+* Emphasis on constant refactoring
+
+Outcomes
+
+* Improvisation - Ability to respond to problems as they come up
+* Easy to fix problems
+
+Thoughts from the Readings
+--------------------------
+
+User Stories
+------------
+
+User Stories Applied
+--------------------
 

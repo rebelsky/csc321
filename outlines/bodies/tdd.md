@@ -51,10 +51,6 @@ Unit testing
 * Why?
 * How?
 * Your notes:
-    * Tests first, rather than code first.
-    * Make tests independent.
-    * Code to test ratio vs. code coverage
-    * stubs vs. mocks vs ....
 
 Code Coverage
 -------------

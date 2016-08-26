@@ -1,4 +1,5 @@
+* Modeling Lessons.
 * BDD Basics.
 * Cucumber Basics.
-* Some Examples.
-* Homework time.
+* A Cucumber Example.
+* Cucumber in Practice.

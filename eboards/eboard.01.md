@@ -1,5 +1,5 @@
-CSC321 2015F, Class 01: An Introduction to the Course
-=====================================================
+CSC321.01 2016S, Class 01: An Introduction to the Course
+========================================================
 
 _Overview_
 
@@ -8,145 +8,135 @@ _Overview_
     * Upcoming Work.
     * Extra Credit.
     * Questions.
+* Quiz.
 * What is this course?
 * Course goals.
 * Why this course?
 * Course structure.
-* Work time.
+* (Possibly) work time.
 
 Preliminaries
 -------------
 
 ### Admin
 
-* I'll take attendance for the first few days to make sure that I know
-  everyone's name.
+* Welcome to CSC 321!
+* I'll be taking attendance for the first week or so, since I'm *really*
+  bad at learning student names.
+* I'm working on getting the other Web sites for the class set up.  I'll 
+  let you know as soon as I do.
 
-### Extra Credit
+Upcoming Work
 
-* CS Extras (generally on Thursdays at 4pm); I don't know about this week
-* CS Table (generally on Tuesdays at noon); I don't know about next week
+* ASAP: Finish the Ruby Tutorial.
+* 8pm Tuesday: Reading Journal on the Ruby Tutorial
+    * Message subject: CSC 321 Journal Day 2 (Your Name)
+    * What's something familiar you discovered about Ruby?
+    * What's something new and exciting that you discovered about Ruby?
+    * How does Ruby handle a programmer's need for multiple inheritance?
+    * What is something you found particularly confusing or puzzling in
+      the reading?
+* For Wednesday: Make sure you've signed up for the fifteen or so services
+  indicated in the email.
+* For Wednesday: Skim Hartl, Chapter 1
+
+### Questions
+
+Quiz
+----
 
 What is this course?
 --------------------
 
-CSC 321 - Software Design Principles and Practices
+* A core part of Grinnell's software design curriculum.
+* A good CS graduate can prove things and build things
+* This course helps you learn some of the strategies for building things.
+    * Particularly bigger pieces of software
+* Bigger software requires
+    * Multiple programmers and coordination among those programmers
+    * Organizational techniques, particularly for how different parts
+      interact.
+    * Organizational techniques for the team.
+    * Version control! (and versions of the program)
+    * Different kinds of problem solving - In the large as well as in
+      the small.
+    * Clients and a way to better understand client goals.
+    * Multiple files!  (And multiple types of files.)
+    * Maintenance (maintain ants)
+    * Perhaps some attention to efficiency
+    * Testing, testing, and more testing.
+    * Modularization
+    * Formal commitments and penalties for failing to meet those commitments
+      (aka "deadlines" or "death marches")
+    * (May require) custom environment, including hardware and software
+      stack
+    * Scalability
+    * Documentation 
 
-* Learn theory, practice, and tools pertaining to the design and
-  construction of software.
-* Using Agile methodologies
-* Constructing software under the Software as a Service (SaaS) model
-* Using Ruby on Rails as our development software
+Course goals
+------------
 
-Course goals - What is the *subject matter* of this course?
------------------------------------------------------------
+What do you want out of this course?
 
-* Write down (or type or text yourself) about five things for yourself.
-* Discuss your answers with the person near you.
-    * What is common among your answers?
-    * What do you consider most important among the anwer you
-      came up with?
-    * Did your partner come up with anything especially important
-      or surprising?
-* Be prepared to share with the broader class.
-
-Things students came up with
-
-* Understanding the relationship between front-end and back-end.
-* UI design (nope)
-* Good practices in designing software
-    * We will cover two primary methodologies: Agile and plan-and-document,
-      with a focus on agile
-* A vocabulary for communicating with other developers
-    * And a deeper understanding of the underlying processes
-* How to analyze/measure where you are within a project.
-* How to set up a server and deploy software (at least SaaS software).
-* Not just Saas, but also other models of software we can build.
-* Writing good code as an individual
-* Developing software as a member of a team
-* Working with a client (theory in 321, practice in 322)
-* Documentation - Getting better at it
-* Sharing code
-* Testing and testing frameworks
-* Databases and SQL.
+* Learn how to structure software well so that you don't have the PITA 
+  experience of the good reverend.
+* Knowledge and skills for working on large pieces of software.
+* Learn how to write software that can be scaled.
+* Familiarize myself with common tools that programmers and SWEs use.
+* Be a competent CS major.
+* Learn how to work with people (peers, clients)
+* Use different parts to provide a coherent whole.
+* How to enter an existing project.  (More CSC 322 than 321, but ...)
+* Good design practices for working larger groups.
+* New languages and techniques and environments
+* Agile development.
 
 Why this course?
 ----------------
 
-Questions
+Why are you enrolled in this course?
 
-* Why did you enroll?
-* Why should we require a course like this in the major?
+* I made it through 207, and wanted to challenge myself more.
+* I wanted to take a CS course, and this was a good time slot.
+* Re'sume' building.
+* I thought this was networks.
+* Learn a broader view of programming.
+* I wanted to learn more about Web development.
+* Required for the major.
+* I like to show up and bug Sam.
+* CSC 322 sounded really cool, and I have to take this to take CSC 322.
 
-Answers
+Course structure and other info
+-------------------------------
 
-* To prepare us for careers in industry
-    * Better serve the client, our employers, and ourselves
-    * Even if we aren't writing software, it's useful to know how
-      software can be written
-* To help us understand practices
-* To work on another aspect of CS; many of our courses focus on
-  the theory side of CS; this lets us focus on the development side
-* It's useful
-* Developing software is fun!
-* More generally, we learn to develop software because we can have
-  a positive impact on the world through the software we develop.
+* In reflecting on the purposes of the software design sequence, the CS
+  department decided
+    * Real projects, that might take more than a semester.
+    * Separate "skills/info" from the project.
+    * Somehow intertwine the two.
+* Discovery: Full semester doesn't work for 321 and 322 together.
+* Starting this semester, new experiement: 321 is seven weeks, 322 is 
+  14 weeks.
+* It's a 300-level class, so assume 10-12 hours per week outside of class.
+    * Coding! (4-6 hpw)
+    * Reading and responding and watching (4-6 hpw)
+* You will do some learning through watching videos (if you choose).
 
-Course structure
-----------------
+Model/Domain
 
-* Look at the course home page and the schedule of topics.
-  <http://www.cs.grinnell.edu/~rebelsky/Courses/CSC321/2015F/>
-* Think about
-    * What is surprising?
-    * What is confusing?
-    * What don't you see that you expected to see?
+* Ruby on Rails, with a Software-as-a-Service (SaaS) model
+* Ruby is a popular and powerful scripting language
+* Rails is a Web development framework that works with Ruby
+* Mostly agile techniques
 
-Surprising
+Books Etc.
 
-* Ethics essay.
-    * As you build software, you have a responsibility to think about
-      the ethics of the software you build.
-* Journaling
-    * Questions about the reading that you are expected to respond
-      to seriously, usually with a paragraph each.
-    * I will try to use your journal questions as the prompt for the
-      way I organize the subsequent class period.
-* What work is due?
-    * Hasn't migrated from SPOC to course web
-* No exams.  Grading is more on process than product.
+* Fox and Patterson: Engineering Software as a Service.
+    * Kindle, Print, MOOC, SPOC
+    * Fox and Patterson are supposed to be rewriting the book *at this instant*
+* Rails Tutorial
 
-Confusing
 
-* What does MOOC stand for?  Massive Open Online Course
-* What does SPOC stand for?  Small Private/Personalized Online Course
-    * We take a MOOC, and build a "section" for a smaller group of
-      students.
-* What does 10.1 mean?  First section of chapter 10.
-* Why doesn't my EdX account work for this course?  Edge.EdX and
-  EdX maintain separate accounts.
-* Why can't I sign up for the MOOC?  They changed it a few days ago.
-  You can still the archived version.
-* Sam screwed up at least one link.
-* How do we keep it under 7 hours?
-    * Limit yourself
-    * Leave time for a reading journal
-    * Log what you do, so that there's evidence that you tried
-* Quizzes, weekly, on your own
-* Tell me about extra credit
-    * Send me a paragraph within two days
-    * Value likely to be similar to 151
-
-Other
-
-* I am here to help support your learning, not to lecture to you.
-* Read and sign the academic honesty policy within the next week.
-
-Work time
----------
-
-* Sign up for the class on edge.edx.org
-* Take the week 2 pretest
-* If you haven't programmed in Ruby, start working on the Ruby
-  tutorial on CodeCademy
+(Possibly) work time
+--------------------
 

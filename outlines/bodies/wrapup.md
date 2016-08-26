@@ -1,17 +1,5 @@
-Grading
--------
-
-* Essay: 20%
-* Percent of reflections submitted on time: 35%
-    * Slight downward scaling for reflections not taken seriously
-    * Additional downward scaling for late reflections
-* Percent of programming assignments submitted on time: 35%
-* Participation/Attendance: 10%
-
 The Subject Matter(s) of the Course
 -----------------------------------
-
-Big categories
 
 * Primary Technologies: Ruby and Rails
 * Additional Technologies
@@ -19,50 +7,28 @@ Big categories
 * Software as a Service
 * General Skills
 
-Primary Technologies: Ruby and Rails
+Debriefing
+----------
 
-Additional Technologies
+Index cards: 
 
-Software Design 
+* Lined side: One thing you liked about the class.
+* Plain side: One thing you would change.
 
-Software as a Service
+Questions:
 
-General Skills
+* Should I make more of the basic Rails stuff as homework, and ask you to
+  do extensions to the various sites in class?
+* What did you think of the SaaSbook?  Would you prefer that we consider
+  other books?  
+* Given that this is a two-credit class, how should it be structured?
+  Is half-semester appropriate?  Is three hours per week appropriate?
+* What would you like more/less of?
 
 Course Evaluation
 -----------------
 
 You know the drill.  I'll leave the room while you fill out the evaluation 
-form.
+form.  Someone needs to bring it to the Science Division Office.  You are
+then free to go.
 
-Debriefing
-----------
-
-Things that will change
-
-* Half-semester, full-time
-* I will know more of the material
-* I'll try to keep the Web site up to date
-* I'll try to provide more feedback
-
-Things that won't change (at least for the near future)
-
-* Ruby/Rails
-* The book/site
-* Who is teaching the course
-
-How did you feel about the following approaches?
-
-* "Focused" small group/large group discussion in class.
-* Timeboxed homework assignments.
-* Mixed text/video.
-
-What are things that went well?
-
-What are things that you would change?
-
-Final Comments
---------------
-
-* This class was special.
-* Take time to say goodbye.

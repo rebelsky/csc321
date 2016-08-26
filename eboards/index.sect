@@ -2,6 +2,41 @@
 
 <table class="index">
   <tr>
+    <td>Class 21</td>
+    <td>&date21;</td>
+    <td><ulink url='eboard.21.html'>&title21;</ulink></td>
+    <td><ulink url='eboard.21.md'>Source 21</ulink></td>
+    <td><ulink url='eboard.21.html'>HTML 21</ulink></td>
+  </tr>
+  <tr>
+    <td>Class 20</td>
+    <td>&date20;</td>
+    <td><ulink url='eboard.20.html'>&title20;</ulink></td>
+    <td><ulink url='eboard.20.md'>Source 20</ulink></td>
+    <td><ulink url='eboard.20.html'>HTML 20</ulink></td>
+  </tr>
+  <tr>
+    <td>Class 19</td>
+    <td>&date19;</td>
+    <td><ulink url='eboard.19.html'>&title19;</ulink></td>
+    <td><ulink url='eboard.19.md'>Source 19</ulink></td>
+    <td><ulink url='eboard.19.html'>HTML 19</ulink></td>
+  </tr>
+  <tr>
+    <td>Class 16</td>
+    <td>&date16;</td>
+    <td><ulink url='eboard.16.html'>&title16;</ulink></td>
+    <td><ulink url='eboard.16.md'>Source 16</ulink></td>
+    <td><ulink url='eboard.16.html'>HTML 16</ulink></td>
+  </tr>
+  <tr>
+    <td>Class 15</td>
+    <td>&date15;</td>
+    <td><ulink url='eboard.15.html'>&title15;</ulink></td>
+    <td><ulink url='eboard.15.md'>Source 15</ulink></td>
+    <td><ulink url='eboard.15.html'>HTML 15</ulink></td>
+  </tr>
+  <tr>
     <td>Class 14</td>
     <td>&date14;</td>
     <td><ulink url='eboard.14.html'>&title14;</ulink></td>
@@ -14,13 +49,6 @@
     <td><ulink url='eboard.13.html'>&title13;</ulink></td>
     <td><ulink url='eboard.13.md'>Source 13</ulink></td>
     <td><ulink url='eboard.13.html'>HTML 13</ulink></td>
-  </tr>
-  <tr>
-    <td>Class 12</td>
-    <td>&date12;</td>
-    <td><ulink url='eboard.12.html'>&title12;</ulink></td>
-    <td><ulink url='eboard.12.md'>Source 12</ulink></td>
-    <td><ulink url='eboard.12.html'>HTML 12</ulink></td>
   </tr>
   <tr>
     <td>Class 11</td>
@@ -49,6 +77,13 @@
     <td><ulink url='eboard.08.html'>&title08;</ulink></td>
     <td><ulink url='eboard.08.md'>Source 8</ulink></td>
     <td><ulink url='eboard.08.html'>HTML 8</ulink></td>
+  </tr>
+  <tr>
+    <td>Class 7</td>
+    <td>&date07;</td>
+    <td><ulink url='eboard.07.html'>&title07;</ulink></td>
+    <td><ulink url='eboard.07.md'>Source 7</ulink></td>
+    <td><ulink url='eboard.07.html'>HTML 7</ulink></td>
   </tr>
   <tr>
     <td>Class 6</td>

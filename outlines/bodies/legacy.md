@@ -1,3 +1,14 @@
+Preparatory Activity
+--------------------
+
+On a sheet of paper (supplied), answer the following questions.
+
+1. What is "legacy code"?  (We see lots of definitions within the
+   chapter.)
+2. List three "code smells" that you regularly notice.
+3. What is SOFA?
+4. List three refactoring techniqeus that you regularly use.
+
 Legacy Code
 -----------
 
@@ -7,6 +18,13 @@ Legacy Code
 * What kinds of maintainance do we worry about for legacy code?
 * How do we do this kind of maintainance?
 
+Code Smells
+-----------
+
+* What are they?
+* Why do we care?
+* Which ones stand out to you?
+
 Refactoring
 -----------
 
@@ -14,7 +32,7 @@ Refactoring
 * What do you see as the key techniques we use to refactor?
 * Sam's perspective: There are a few purposes for the list of
   refactoring techniques.
-    * They serve to remind programmerss of the kinds of things they
+    * They serve to remind programmers of the kinds of things they
       can do to make code better.
     * They provide us with a *vocabulary* to talk about the kinds of
       changes you might make to a program.
@@ -23,94 +41,6 @@ Refactoring
 
 An Example
 ----------
-
-<pre class="programlisting">
-class TimeSetter
-  def self.convert(d)
-    y = 1980
-    while (d > 365) do
-      if ((y % 400 == 0) || (y % 4 == 0) && (y % 100 != 0))
-        if (d > 366)
-          d -= 366
-          y += 1
-        end
-      else
-        d -= 365
-        y += 1
-      end
-    end
-    return y
-  end
-end
-</pre>
-
-Our book refactors this to the following code.
-
-<pre class="programlisting">
-class TimeSetter
-  ORIGIN_YEAR = 1980
-  def self.caclculate_current_year(days_since_origin)
-    @@year = ORIGIN_YEAR
-    @@days_remaining = days_since_origin
-    while (@@days_remaining > 365) do
-      if leap_year?
-        peel_off_leap_year!
-      else
-        peel_off_regular_year!
-      end
-    end
-    return @@year
-  end
-  
-  private
-  def self.peel_off_leap_year!
-    if (@@days_remaining >= 366)
-      @@days_remaining -= 366
-      @@year += 1
-    fi
-  end
-  def self.peel_off_regular_year!
-    @days_remaining -= 365;
-    @year += 1;
-  end
-  def leap_year?
-    @year % 400 == 0 ||
-      (@year % 4 == 0 && @year % 100 != 0)
-  end
-end     
-</pre>
-
-In contrast, we rewrote (refactored?) it to the following code.
-
-<pre class="programlisting">
-lass TimeSetter
-  def self.isLeapYear(year)
-    ((year % 400) == 0) || ((year % 4 == 0) && (year % 100 != 0))
-  end
-
-  def self.daysInYear(year)
-    if isLeapYear(year)
-      366
-    else
-      365
-    end
-  end
-
-  def self.convert(d)
-    y = 1980;
-    while (d > daysInYear(y))
-      d -= daysInYear(y)
-      y += 1
-    end
-    return y
-  end
-end
-</pre>
-
-What do you see as athe strengths and weaknesses of each strategy?
-
-Another Example
----------------
 
 From Field et al., pp. 2-4.
 

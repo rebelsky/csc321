@@ -4,7 +4,7 @@ Front Door
 Introduction
 ------------
 
-Welcome to the Fall 2015 section of Grinnell College's CSC 321,
+Welcome to the Spring 2016 section of Grinnell College's CSC 321,
 *Software Design: Principles and Practices*.  In CSC 321, we build
 your skills in software development to prepare for you to do projects
 in CSC 322 and elsewhere.  The current model of the course focuses on
@@ -36,6 +36,11 @@ to "learn how to learn".  When you are stuck, I recommend that
 you follow the strategy of [you must try, and then you must
 ask](https://blogs.akamai.com/2013/10/you-must-try-and-then-you-must-ask.html).
 
+This semester, we are trying a new approach to the course (including a new
+book).  We will meet three days per week for the first half of the semester.
+You are expected to do about twelve hours of work outside of class each 
+week (and you may timebox that work).
+
 Learning Goals
 --------------
 
@@ -53,44 +58,38 @@ Important Warnings
 ------------------
 
 *Warning!* The Berkeley CS 169 course that forms the underpinnings of
-this course is undergoing some siginficant changes this semester, and
-their start date is not until October.  We may hit some hicups because
-of those changes.
+this course underwent some significant changs last semester, and we
+will hit some hicups because of those changes.
 
-*Warning!* I am adapting Dr. Davis's course.  Some of her natural
-approaches may not match my own, so things may be uneven at times.
+*Warning!* I am re-adapting Dr. Davis's course and a new schedule.
 
-*Warning!* I am new to using EdX as an instructor and reworking Dr. Davis's
-materials.  I only got access to EdX the weekend before the first day of
-class.  Hence, The EdX portions of this course may be a bit wonky for now.
+*Warning!* I am unaccustomed to using EdX and my course Web site.  At
+times, you will find that the EdX site is not up to date.  When that
+happens, please notify me ASAP.
 
-*Warning!* Many past Grinnell students have said that they prefer the
-readings to the videos.  You should try both.
-
-*Warning!*  I am teaching three new courses this fall (as well as
-CSC 151) and serving as department chair.  I am trying to institute a
-wellness schedule: Except on weeks in which I have an exam to grade,
-I am limiting myself to two hours of evening work per day and five hours
-of weekend work.
+*Warning!* Some students prefer readings.  Some prefer videos.  
+You should try both.
 
 Basics
 ------
 
-*Meets*: Tu 2:00-3:50 in Science 3819.
+*Meets*: MWF 1:00-1:50 in Science 3819 (weeks 1-7 of the semester).
 
 *Instructor*: 
 [Samuel A. Rebelsky](http://www.cs.grinnell.edu/~rebelsky/)
 [[rebelsky](mailto:rebelsky@grinnell.edu)],
 Science 3824.  641-269-4410 (office).  641-990-2947 (cell).  
-Office hours: MWF 11:00-11:45.  Book time at <https://rebelsky.youcanbook.me>.
+Office hours: TBD.  Book time at <https://rebelsky.youcanbook.me>.
 I also tend to follow an open door policy: Feel free to stop by when my
 door is open or to make an appointment for another time.  You can also
 look at [my normal schedule](http://www.cs.grinnell.edu/~rebelsky/schedule.html)
 for some information.
 
-*Class Mentor*:
-Nora Bresette-Buccino.
+*Class Mentors*:
+Nora Bresette-Buccino 
 [[bresette](mailto:bresette@grinnell.edu)].
+and Albert Owusu-Asare.
+[[owusuasa](mailto:owusuasa@grinnell.edu)].
 Office hours: TBD.
 
 Grading
@@ -103,30 +102,28 @@ may change.*
   I will evaluate you on the quality of your contributions.
 * __Journal__: 30%.  Following the lead of Dr. Davis and Prof. Weinman, I
   ask you to do a journal assignment after each reading, video, and/or
-  tutorial.  Journals are generally due at 8:00 p.m. on Monday to give 
-  me time to reflect on them before class.
+  tutorial.  Journals are generally due at 8:00 p.m. on the night before
+  class to give me time to reflect on them before class.
 * __Homework__: 30%.  These are timeboxed.  If you spend the required
   time and document your efforts, you will get a minimum of 90% on
   a homework assignment.  Homework should be due about 5pm on Mondays.
-* __Quizzes__: 20%.  These will be online.  I will drop the lowest quiz
-  grade.
-* __Ethics Essay__: 10%.  Sortly after fall break, I will ask you to
-  write an essay about ethics.  
+* __Ethics Essay__: 30%.  Toward the end of the semester, I will ask you
+  to write an essay about ethics.
 
 Workload
 --------
 
-*I know that there have been concerns about the workload in this class. 
+*I know that there have been concerns about the workload in this class.
 I will do my best to keep the load reasonable.  Let me know when it's
-more than seven hours per week.  (If you don't want to tell me, tell the
-SEPC and they'll tell me.)*
+more than twelve hours per week outside of class.  (If you don't want
+to tell me, tell the SEPC and they'll tell me.)*
 
-Here's what I expect you'll be spending your seven hours per week on.
+Here's what I expect you'll be spending your time on each week
 
-* Class time (2 hours)
-* Readings/videos (1-2 hours)
-* Journaling and quizzes (1 hour)
-* Programming and writing assignments (2-3 hours)
+* Class time (3 hours)
+* Readings/videos (4 hours)
+* Journaling (2 hours)
+* Programming and writing assignments (4 hours)
 
 The first week may be a bit busier as you get set up.
 
@@ -153,8 +150,8 @@ Books and Other Readings
 it will primarily contain my notes for each class (outlines) and my record
 of each class (eboards), but we'll see.
 
-Fox, Armando and Patterson, David (2014). Engineering Software as a
-Service: An Agile Approach Using Cloud Computing, edition 1.1.1.
+Fox, Armando and Patterson, David (2016). _Engineering Software as a
+Service: An Agile Approach Using Cloud Computing_, latest edition.
 
 > Our core textbook.  Fox and Patterson synthesized a lot of ideas
 to produce a textbook that grounds software engineering principles in
@@ -165,6 +162,11 @@ particularly since they are updating the textbook again this semester.
 or an appropriate app, you should be able to read the book on any
 electronic device.)
 
+Hartl, Michael (2015).  _Ruby on Rails Tutorial_ (3rd Edition).  Addison-Wesley.
+
+> The book we'll be using to learn Rails.  Available online at
+  <https://www.railstutorial.org/book>
+
 Fox, Armando and Patterson, David (2014).  BerkeleyX: CS169.1x Engineering
 Software as a Service (Archived Edition).  Available online at 
 <https://courses.edx.org/courses/BerkeleyX/CS-CS169.1x/3T2014/>.
@@ -174,10 +176,7 @@ to the various readings.  There are also many other resources available
 on the MOOC.
 
 James Shore and Shane Warden (2007), The Art of Agile Development, 1st edition.
-
-> A nice text on the agile development methodologies we will be using
-in CSC 322, which provides more depth than the Fox and Patterson stuff.  
-The text is required in CSC 322 and optional in CSC 321.
+(Recommended).
 
 Citations
 ---------

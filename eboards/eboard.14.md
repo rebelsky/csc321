@@ -1,225 +1,276 @@
-CSC321.01 2015F, Class 14: Course Wrapup
-========================================
+CSC321.01 2016S, Class 14: Codes of Ethics
+==========================================
 
 _Overview_
 
 * Preliminaries.
-* Notes on grading.
-* The subject matter(s) of the course.
-* EOCE.
-* Debriefing.
-* Final comments.
+    * Admin.
+    * Upcoming Work.
+    * Extra Credit.
+    * Questions.
+* Ugly Code, Revisited.
+* Professional Codes of Ethics.
+* Comments From Students.
+* Agile and Ethical.
 
 Preliminaries
 -------------
 
 ### Admin
 
-* Happy last day of class!
-* Today is mostly focused on debriefing.
-* Food in the commons (left over from Hour of Code).
-* You are expected to show up to the final next Thursday at 2pm.
-* Proofpoint.
+### Upcoming Work
 
-Grading
--------
+* SaaSbook 9 for Friday.
+* Reading Journal for Friday (due Thursday at 8pm)
+    * Subject: Reading Journal for Class 15 (Your Name)
+    * How does the description of Software Mainenance reflect your own expectations or experiences about such issues?  What was familiar?  What was surprising?
+    * What is the most important thing you learned from Chapter 9, Software Maintenance (textbook or videos)?
+    * What was the muddiest point from this week's material? Explain that idea in your own words as best you can.
+    * These questions were inspired by the work of JLND.
 
-* Essay: 20%
-* Percent of reflections submitted on time: 35%
-    * Slight downward scaling for reflections not taken seriously
-    * Additional downward scaling for late reflections
-* Percent of programming assignments submitted on time: 35%
-* Participation/Attendance: 10%
+### Good Things to Do
 
-The Subject Matter(s) of the Course
------------------------------------
+#### Academic
 
-Big categories
+* Town Hall, Tonight 7:30 pm JRC 101
+* CS Extras Thursday (?)
+* GCStuACM after CS Extra
 
-* Primary Technologies: Ruby and Rails
-* Additional Technologies
-* Software Design 
-* Agile Programming
-* Software as a Service
-* General Skills
+#### Peer
 
-Primary Technologies: Ruby and Rails
+* SGA Meeting tonight!  8:30pm JRC 209.
 
-* Basic syntax of Ruby
-* Iterators
-* Convention over configuration 
-    * If you don't understand convention, you make bad choices
-* Routes in Rails
-* Gems!  People have written things that you can use, and it's normal
-  practice to add these things.
-* Meta programming.  Code that develops code dynamically.
-* How to use migrations and things like that.
-* "Bundle install"
-* Deploying to Heroku
-* How to start a Rails app
-    * How not to start a Rails app
-* The parts of a Rails app
-* Cucumber - A gem for BDD 
-* RegEx - Patterns
-* Rails tools like rake
-* Rspec - For TDD
+### Questions
 
-Additional Technologies/Practices
+Ugly Code, Revisited
+--------------------
 
-* Git / Version control
-* Deprecation - Things change, sometimes faster than you want.
-* Dependencies - One thing you want requires five things you don't know
-  you want.
-* Multiple environments - development, production, test, etc.
-* Cloud 9 - Development on virtual machines
-* Capybara - Web step definitions
-* HAML
+<pre>
+class TimeSetter
+  def self.convert(daysleft)
+    year = 1980
+    # Keep moving into the next year until we are down
+    # to a reasonable number of days
+    while (daysleft > 365) do
+      daysleft -= 365
+      # There's an extra day in a leap year!
+      if (isleapyear year)
+        daysleft -= 1
+      end
+      year += 1
+    end
+    return (year,daysleft)
+  end
 
-Software Design 
+  def self.isleapyear(year)
+    return (year % 400 == 0) || (year % 4 == 0) && (year % 100 != 0);
+  end
+end
+</pre>
 
-* A bit about design patterns
-* Model/View/Controller
-* UML
-* Legacy code and how to deal with it
-* Code smells - and what causes them
-* Different models of testing
-* Different metrics of code quality
-* Architecture of large systems
+This is still wrong.  Why?
 
-Agile Programming
+* `daysleft` is a bad name for the parameter, since that's not
+* The 366th day of 1980 gets converted to the 0th day of 1981, when
+  it really should be the 366th day of 1980. (December 31, 1980.)
+  what it represents.
 
-* Refactoring
-* Behavior-Driven Development
-* Test-Driven Design
-* Iterative design 
-* Agile approaches to legacy
-* User stories
-* Different roles, such as Scrum master
-* Testing metrics
-* Project velocity
-* Pair programming
+Fix?
 
-Software as a Service
+* Maybe the while?  Maybe the if-else?
+* Maybe throw it all away and start from scratch?
 
-* Definition
-* Communication via APIs
+<pre>
+class TimeSetter
+  def self.convert(days_since_start_of_time)
+    daysleft = days_since_start_of_time
+    year = 1980
+    # Keep moving into the next year until we are down
+    # to a reasonable number of days
+    while (daysleft > 365) do
+      daysleft -= 365
+      # There's an extra day in a leap year!
+      if (isleapyear year)
+        daysleft -= 1
+      end
+      year += 1
+    end
+    return (year,daysleft)
+  end
 
-Other CS Skills
+  def self.isleapyear(year)
+    return (year % 400 == 0) || (year % 4 == 0) && (year % 100 != 0);
+  end
+end
+</pre>
 
-* Pair programming in the cloud
-* Duck typing as something in programming languages
-* Different approaches to OOP than in Java
-* A bit about databases
-* The dynamic of dealing with ill-defined problems - should we Google, should
-  we try to understand, do we understand correctly?
-* Relying on existing resources.
-* Ethics (we wield much power, we should use it appropriately)
 
-General Skills
+Approach one: Adding the code
 
-* Building the project builds the knowledge - you have to venture out into
-  the real world
-* Dealing with incomplete and ill-formed requirements ("The homework is
-  somewhere on the Web site; figure out when it's due and how to submit it.")
-* Working with others, even when you don't want to and when neither of you
-  know what's going on
-* Collaborating beyond your close partners
-* Research methods (How to use Google and Stackoverflow better)
-* "There's more to life than CS"
-* How to deal with unexpected questions from an authority figure (more or less)
-* Using MOOCs/SPOCs, particularly ones that are not quite up-to-date
-* More self-directed learning
-    * Choosing resources - Is video or text better?
-* Thinking about deeper reading
+        if daysleft > 0
+          ++year
+        else if (is_leap_year year)
+          daysleft = 366
+        else
+          daysleft = 365
+        end
 
-Misc
+<pre>
+class TimeSetter
+  def self.convert(days_since_start_of_time)
+    daysleft = days_since_start_of_time
+    year = 1980
+    # Keep moving into the next year until we are down
+    # to a reasonable number of days
+    while (daysleft > 365) do
+      daysleft -= 365
+      # There's an extra day in a leap year!
+      if (isleapyear year)
+        daysleft -= 1
+      end
+      if daysleft > 0
+        ++year
+      else if (is_leap_year year)
+        daysleft = 366
+      else
+        daysleft = 365
+      end
+    end
+    return (year,daysleft)
+  end
 
-* TLAs and TPLAs and Buzzwords (how to sound more impressive while
-  confusing those around you)
+  def self.isleapyear(year)
+    return (year % 400 == 0) || (year % 4 == 0) && (year % 100 != 0);
+  end
+end
+</pre>
 
-Course Evaluation
+* Boy this code is hard to read.  If the day in the year is 0, then
+  it should be the last day of the current year.
+    * Whoops.  We're back to looping forever.
+* Two identical tests in almost immediate succession.
+* Code that can never be executed.
+
+Figure out a loop invariant (a statement about the status of the
+system that you can guarantee is true at the end of the loop if it's
+true at the beginning of the loop, and that is helpful in achieving
+the goals of the program.)  
+
+* 0 <= daysleft 
+* daysleft days since January 0, year is the same as
+  days_since_start_of_time since January 0, 1980.
+
+Another solution: In the while loop, do a more careful test
+
+<pre>
+class TimeSetter
+  def self.convert(days_since_start_of_time)
+    daysleft = days_since_start_of_time
+    year = 1980
+    # Keep moving into the next year until we are down
+    # to a reasonable number of days
+    while (daysleft > 365) do
+      if (is_leap_year year && daysleft >= 366)
+        daysleft -= 366
+        year += 1
+      else if (is_leap_year year)
+        break out of the loop;
+      else
+        daysleft -= 365
+        year += 1
+      end
+    end
+    return (year,daysleft)
+  end
+
+  def self.isleapyear(year)
+    return (year % 400 == 0) || (year % 4 == 0) && (year % 100 != 0);
+  end
+end
+</pre>
+
+* It's not intuitive, even though it may be functional. 
+* It's hard to read quickly.
+* We're hardcoding something special for one case.
+* Maybe we should move things outside of the loop.
+* Two nearly identical calls to is_leap_year in a row seems wasteful
+* Two nearly identical bodies
+* Breaking out in the middle of a loop is sometimes dangerous
+
+<pre>
+<pre>
+class TimeSetter
+  def self.convert(days_since_start_of_time)
+    daysleft = days_since_start_of_time
+    year = 1980
+    # Keep moving into the next year until we are down
+    # to a reasonable number of days
+    while (daysleft > (daysinyear year))
+      daysleft -= (daysinyear year)
+      year += 1
+    end
+    return (year,daysleft)
+  end
+
+  def self.daysinyear(year)
+    if (isleapyear year)
+      return 366
+    else
+      return 365
+    end
+  end
+
+  def self.isleapyear(year)
+    return (year % 400 == 0) || (year % 4 == 0) && (year % 100 != 0);
+  end
+end
+</pre>
+
+* Crappy naming (fixed)
+* Repeated computation (can be fixed)
+* But much clearer
+
+Professional Codes of Ethics
+----------------------------
+
+Why do we have professional codes of ethics?
+
+* There are commonly held moral codes.
+* Being a professional means being held to higher standards.
+    * Should share codes.
+    * Need to think about how "commonly held" codes might apply 
+      in professional situations or might conflict.
+    * Lets you have a resource to use when you find breaches of
+      ethical conduct.
+    * Would like something concrete so that we can agree to it.
+    * We would hope that we follow the code.
+* For software engineers
+    * The growth of computing means that there will be more situations
+      that could provide questionable moral/ethical imperatives (e.g., 
+      big data) and a clear code of ethics helps us navigate them.
+* The first responsibility of a professional is to society and not to
+  their client.  Why?
+    * The client might desire something that conflicts with the betterment
+      of society.
+    * We could have evil clients.
+    * Chemists (scientists) seem to have a responsibility to consider the
+      effects of what they do.  AI researchers have written a statement.
+    * Civil engineers, who build bridges and such, must prioritize safety
+      of society over the desires of their clients for lowered cost or
+      greater aesthetics or ...
+    * Some professions may have a primary responsibility to the client:
+      Lawyers, lobbyists
+    * Some professions the client may be "society"
+* Hard questions
+    * What if society has different beliefs than you do.
+    * We might have a responsibility to understand issues of cultural
+      relativity and identify where we fall.
+* Examples
+    * VM emissions scandal
+
+Comments From Students
+----------------------
+
+Agile and Ethical
 -----------------
 
-You know the drill.  I'll leave the room while you fill out the evaluation 
-form.
-
-Debriefing
-----------
-
-Things that will change
-
-* Half-semester, full-time
-    * Too fast; Worry that next semester will be even faster
-* I will know more of the material
-* I'll try to keep the Web site up to date
-* I'll try to provide more feedback
-
-Things that won't change (at least for the near future)
-
-* Ruby/Rails
-* The book/site
-* Who is teaching the course
-
-How did you feel about the following approaches?
-
-* "Focused" small group/large group discussion in class.
-    * It's hard to have a good big-group discussion
-    * Small group is good; speed it up
-    * This feels more factual; lecture might be useful; more "work
-      through the example" would be good
-    * Need more examples, perhaps examples to work through
-    * Seems like a bit of a binary - If you understood it, the time wasn't
-      useful; if you didn't understand it, the small group got stuck.
-    * More time to work on the homework in class, with advice.
-    * Success days: Early in the semester, first code smells, two ethics
-      discussions
-    * Applying the reading to a new problem would be a good model.
-    * More info on what the goals of assignments was (logic or convention)
-        * Taste of the approach
-        * Start to learn convention
-    * Disconnect between class and homework
-    * For three fifty minute classes, about 1:1 or 1:2 talk/code
-    * We covered a lot of material, but none of it deeply.  Should we
-      focus it more tightly?
-    * Planning is hard for a one-day-a-week course.
-* Timeboxed homework assignments.
-    * Good idea; relieved stress.  (Or at least necessary.)
-    * Having available solutions would be good.
-    * More feedback would be good.
-    * Compendium of knowledge to get around the stupid things so that
-      you can focus on the more important things.
-* Mixed text/video.
-
-Issues
-
-* The book was not great in Kindle format; some parts that were hard
-  to read.  
-    * (Printed copies around the department would help.)
-* Need more support / less work / more focused work / better scale of
-  projects / improved schedule
-* Find a better ruby tutorial
-* There's not enough information to let you do the assignments.  The
-  book did not prepare students well enough for the homework.
-* Use a Rails book (or a Rails site) to learn things, use this book
-  for the higher-level overview.  Gap between homework and book.
-* Make it Grinnellian - have one of us write the readings and such (or at
-  least supplemental readings and such).
-* Focus on big-picture ideas rather than particular skills; skills we change
-  and you will learn them on your job.
-
-What are things that went well?
-
-* 
-
-What are things that you would change?
-
-* More information on Ruby/Rails!
-    * Plan one day per week on philosophy, one day a week on Ruby/Rails
-      (or at least conventions and the work that Rails does for you and
-      the rest of the world may not), one day per week for work time?
-
-Final Comments
---------------
-
-* This class was special.
-* Take time to say goodbye.

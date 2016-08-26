@@ -446,6 +446,14 @@ SPAN.overview {
   display: block;
 }
 
+/**
+ * The title of a day (in the schedule).
+ */
+SPAN.daytitle {
+  display: block;
+  font-weight: bold;
+}
+
 /*
  * Override some of the Docbook decisions
  */
