@@ -123,7 +123,7 @@ print "SUMMARY REPORT\n";
 print "--------------\n";
 print "\n";
 # printSummary(participation, homework, essay, journal);
-printSummary("10.0", "30.0", "30.0", "30.0");
+printSummary("20.0", "0.0", "40.0", "40.0");
 
 # +-------------+-----------------------------------------------------
 # | Subroutines |
@@ -259,14 +259,14 @@ sub printSummary($$$$)
     $possible += $participation_percent;
   }
 
-  print "Homework ....... ($homework_percent%): ";
-  if (!$homework) {
-    print "[Not available]\n";
-  } else {
-    print "$homework\n";
-    $total += convertLetterGrade($homework) * $homework_percent/100;
-    $possible += $homework_percent;
-  }
+# print "Homework ....... ($homework_percent%): ";
+# if (!$homework) {
+#   print "[Not available]\n";
+# } else {
+#   print "$homework\n";
+#   $total += convertLetterGrade($homework) * $homework_percent/100;
+#   $possible += $homework_percent;
+# }
 
   print "Essay .......... ($essay_percent%): ";
   if (!$essay) {

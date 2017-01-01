@@ -1,2 +1,2 @@
-We consider issues of behavior-driven design, using Cucumber as your
+We consider issues of behavior-driven design, using Cucumber as our
 BDD platform.

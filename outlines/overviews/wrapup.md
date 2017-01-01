@@ -1,3 +1,5 @@
 * The subject matter(s) of the course.
-* Debriefing.
+* Listing Topics.
 * EOCE.
+* Debriefing.
+* Student comments.

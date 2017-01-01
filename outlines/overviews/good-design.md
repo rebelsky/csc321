@@ -1,4 +1,3 @@
-* Design Patterns.
-* The GoF List.
-* Some Questions.
-* SOLID.
+* Remaining Patterns and Principles.
+* Important outcomes - SamR's view.
+* Important outcomes - Student views.

@@ -3,11 +3,25 @@ Preparatory Activity
 
 On a sheet of paper (supplied), answer the following questions.
 
+0. What is one compelling point for your side in the global
+   surveillance "debate"?
 1. What is "legacy code"?  (We see lots of definitions within the
    chapter.)
 2. List three "code smells" that you regularly notice.
 3. What is SOFA?
-4. List three refactoring techniqeus that you regularly use.
+4. List three refactoring techniques that you regularly use.
+
+Global Surveillance
+-------------------
+
+"I would like to discuss the idea of global surveillance and where to
+draw the line.  It's a grey area for me and I'd like to get more opinions
+on it."
+
+* Arguing for as much surveillance as possible: MG, CG, NT, AH, SH, YL,
+  EZ, GN
+* Arguing for a moderate position: ST, RW, BR
+* Arguing for none whatsoever: Everyone else.
 
 Legacy Code
 -----------
@@ -23,7 +37,10 @@ Code Smells
 
 * What are they?
 * Why do we care?
-* Which ones stand out to you?
+* What are some useful smells to look for?
+    * SOFA (or the inverse thereof - LMMC)
+* What are smells that *you* look for?
+* How do we make things smell better?
 
 Refactoring
 -----------
@@ -42,7 +59,33 @@ Refactoring
 An Example
 ----------
 
-From Field et al., pp. 2-4.
+We'll continue our example from last class.  What "smells wrong"
+in this example?
+
+<pre>
+class TimeSetter
+  def self.convert(d)
+    y = 1980
+    while (d > 365) do
+      if ((y % 400 == 0) || (y % 4 == 0) && (y % 100 != 0))
+        if (d > 366)
+          d -= 366
+          y += 1
+        end
+      else
+        d -= 365
+        y += 1
+      end
+    end
+    return [y,d]
+  end
+end
+</pre>
+
+Another Example
+---------------
+
+From Fields et al., _Refactoring: Ruby Edition,, pp. 2-4.
 
 <pre class="programlisting">
 class Movie

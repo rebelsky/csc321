@@ -1,1 +1,1 @@
-We step back and look at the "big picture" of the course.
+We consider some core issues in software engineering.

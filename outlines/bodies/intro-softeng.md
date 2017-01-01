@@ -1,13 +1,12 @@
-The Semi-Flipped Classroom
---------------------------
+Planning for Client Meetings
+----------------------------
 
-* As you've noted, we're using a variety of learning mechanisms in this
-  course.
-    * Online tutorials
-    * "Flipped classroom"
-    * Videos 
-    * And more
-* What have your experiences been with these different models?
+* Introduce yourselves!
+* Find out ... How to contact them, How much advance notice, ....
+* Ask them to describe the project.
+* What do they see as the most important thing for you to work on
+  this semester?
+* When will you next meet?
 
 Software Engineering
 --------------------

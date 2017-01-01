@@ -18,6 +18,7 @@ class TimeSetter
         y += 1
       end
     end
+    return [y,d]
   end
 end
 </pre>
@@ -35,25 +36,16 @@ Loop invariants
 * So let's remember what loop invariants are.  Three main aspects.
 * How would the help with this program?
 
-Code smells
------------
+Global Surveillance
+-------------------
 
-* What are they?
-* Why do we care?
-* What are some useful smells to look for?
-    * SOFA (or the inverse thereof - LMMC)
-* What are smells that *you* look for?
-* How do we make things smell better?
+"I would like to discuss the idea of global surveillance and where to
+draw the line.  It's a grey area for me and I'd like to get more opinions
+on it."
 
-Unit testing
-------------
+* Arguing for as much surveillance as possible: MG, CG, NT, AH, SH, YL,
+  EZ, GN
+* Arguing for a moderate position: ST, RW, BR
+* Arguing for none whatsoever: Everyone else.
 
-* Why?
-* How?
-* Your notes:
 
-Code Coverage
--------------
-
-* Basically: How much of the code that we've written actually gets touched
-  by our tests.

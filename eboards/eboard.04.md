@@ -1,0 +1,65 @@
+CSC321.01 2016F, Class 04: Your First Rails Application
+=======================================================
+
+_Overview_
+
+* Preliminaries.
+    * Admin.
+    * Upcoming Work.
+    * Extra Credit.
+    * Questions.
+* Activity: Building a toy app.
+* Debrief.
+
+Preliminaries
+-------------
+
+### Admin
+
+* I am still a bit behind, and did not have a chance to recheck the
+  new version of Hartl Chapter 2 (or to read your journals).  I apologize.
+* I think we are going to transition from starting Hartl chapters in
+  class and finishing out of class to starting out of class and finishing
+  in class.
+* Yes, you are doing lots of little installs.  It's good to get used to 
+  it.
+* Friday PSA: <http://www.cs.grinnell.edu/~rebelsky/musings/friday-psa.html>
+
+### Upcoming Work
+
+* For Monday: Finish Chapter 2 of Hartl (including all construction
+  and exercises).  Start Chapter 3 of Hartl.
+* 10pm Sunday: Reading Journal on Hartl, Chapters 2 and 3
+    * Message subject: CSC 321 2016F: Journal for Class 5 (Your Name)
+    * What do you see as the advantages and disadvantages of using
+      scaffolding?
+    * Pick three files created by the scaffold command (files that Hartl
+      doesn't describe) and do your best to describe them.
+    * What is something in the Chapter 3 reading that you'd like to
+      discuss in class on Monday?
+
+### Good Things to Do
+
+* Hear About Diversity and Inclusion from Intercultural Affairs Candidate
+  Friday, Sept. 2 4:15 p.m., Joe Rosenfield '25 Center, Room 209
+* CS Table Tuesday: Passwords and more.
+* CS Extras Thursday: PM
+* Convo, September 8 (Thursday, 11:00 a.m., JRC 101): Roberto
+  Gonzales on "From Undocumented to DACAmented: Understanding Legal Status 
+  in a New Policy Context".  
+    * Get a free copy of his book _Lives in Limbo: Undocumented and Coming 
+      of Age in America_ by visiting Macy 203 during regular office times.
+* Film screening Sat 1pm and Harris of Johnny Guitar and The Good, The Bad, The 
+  Weird, the Also Awesome.
+* International Relations talk Wednesday at 8pm in JRC 204
+
+### Questions
+
+* Can we keep resubmitting the homework?  Yes.
+
+Activity: Building a toy app
+----------------------------
+
+Debrief
+-------
+

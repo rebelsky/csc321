@@ -1,19 +1,13 @@
-Lessons from Modeling Exercise
-------------------------------
+Test-Driven Development
+-----------------------
 
-What do you take as the key lessons from the modeling exercise?
+* What is it?
+* How does it relate to the kinds of testing you've done in your other
+  classes?
+* Why do we do it?
 
-* Think about the types of your data.
-* IDs are useful.
-* Symmetric one-many relationships are a many-many relationship.
-* We often represent many-many relationships with a table.
-* If we write about the relationships, a smart program can figure
-  out how to represent it in a table.
-* We need to cross our fingers that the DBMS does things sensibly.
-    * Example, cross references.
-
-Behavior-Driven Development
----------------------------
+Behavior-Driven Design
+----------------------
 
 * What do you see as the key features of BDD?
 * What differences do you see between BDD and TDD?
@@ -37,15 +31,15 @@ Cucumber Basics
   natural-language definition of aspects of the user story.
 * *Step definitions* indicate how to translate the steps to procedure
   calls.  (Yay pattern matching!)
-* *Support code* helps implement some of those caclls.
+* *Support code* helps implement some of those calls.
 * The *automation library* deals with common things, like fetching pages.
-  We often use Capybara to help with automation.
+    * We often use Capybara to help with automation.
 
 A Cucumber Example
 ------------------
 
 Let's walk through some scenarios and think about what work we might have
-to do to implement these Cucumber scenarios.  Do they effect model, view,
+to do to implement these Cucumber scenarios.  Do they affect model, view,
 or controller (or all three)?  (Suppose we had the repaired version of
 the original database, with no director.)
 

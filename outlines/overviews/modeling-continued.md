@@ -1,4 +1,4 @@
-* A Sample Database Design.
+* Data Modeling.
+* Exercise: A Sample Database Design.
 * Analysis.
-* A Revised Design.
-* Lessons.
+* Revisions.

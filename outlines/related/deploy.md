@@ -1,1 +1,1 @@
-* [Hartl, Chapter 1](https://www.railstutorial.org/book/beginning#cha-beginning)
+* [Hartl, Chapter 1](https://www.railstutorial.org/book/beginning)

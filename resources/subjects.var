@@ -9,7 +9,7 @@
 +day
 <!ENTITY title{$day} "Getting Started with Ruby">
 <!ENTITY abbrev{$day} "intro-ruby">
-<!ENTITY reading{$day} "">
+<!ENTITY reading{$day} "<reading>SaaSbook 3.1-3.4</reading>">
 <!ENTITY due{$day} "">
 
 +day
@@ -39,12 +39,17 @@
 <!ENTITY due{$day} "">
 
 +day
-<!ENTITY title{$day} "User Stories">
-<!ENTITY abbrev{$day} "user-stories">
-<!ENTITY reading{$day} "<reading>SaaS 3, 8.1-8.2; Hartl 4</reading>">
-<!ENTITY due{$day} "">
+<!ENTITY title{$day} "Ruby, Revisited">
+<!ENTITY abbrev{$day} "ruby-revisited">
+<!ENTITY reading{$day} "<reading>SaaS 3.5-3.8; Hartl 4</reading>">
 
 <!ENTITY week03 "Modeling">
+
++day
+<!ENTITY title{$day} "User Stories">
+<!ENTITY abbrev{$day} "user-stories">
+<!ENTITY reading{$day} "<reading>SaaS 8.1-8.2</reading>">
+<!ENTITY due{$day} "">
 
 +day
 <!ENTITY title{$day} "Extending Your Rails Application (1)">
@@ -58,13 +63,13 @@
 <!ENTITY reading{$day} "<reading>Hartl 6</reading>">
 <!ENTITY due{$day} "">
 
+<!ENTITY week04 "Rethinking Development">
+
 +day
 <!ENTITY title{$day} "Modeling, Continued">
 <!ENTITY abbrev{$day} "modeling-continued">
 <!ENTITY reading{$day} "">
 <!ENTITY due{$day} "">
-
-<!ENTITY week04 "Rethinking Development">
 
 +day
 <!ENTITY title{$day} "Software as a Service">
@@ -78,24 +83,30 @@
 <!ENTITY reading{$day} "<reading>SaaS 7</reading>">
 <!ENTITY due{$day} "">
 
+<!ENTITY week05 "Professional Responsibilities">
+
++day
+<!ENTITY title{$day} "Codes of Ethics">
+<!ENTITY abbrev{$day} "ethics">
+<!ENTITY reading{$day} '<reading>Don Gotterbarn, Keith Miller, and Simon Rogerson (October 1999). Computer Society and ACM approve Software Engineering Code of Ethics. <emphasis>IEEE Computer</emphasis> 32(10): 84-88.  <ulink url="https://www.computer.org/cms/Computer.org/Publications/code-of-ethics.pdf"/>.  Peter G. Neumann (February 2015). Inside Risks: Far-sighted thinking about deleterious computer-related events. <emphasis>CACM</emphasis> 59 (2): 30-33. <ulink url="http://www.csl.sri.com/users/neumann/cacm235.pdf"/>.  ACM Council (October 1992).  ACM Code of Ethics and Professional Behavior. <ulink url="http://www.acm.org/about/code-of-ethics/"/>.</reading>'>
+<!ENTITY due{$day} "">
+
 +day
 <!ENTITY title{$day} "Test-Driven Development">
 <!ENTITY abbrev{$day} "tdd">
 <!ENTITY reading{$day} "<reading>SaaS 8</reading>">
 <!ENTITY due{$day} "">
 
-<!ENTITY week05 "Professional Responsibilities">
-
 +day
-<!ENTITY title{$day} "Pause for Breath">
-<!ENTITY abbrev{$day} "pause-01">
-<!ENTITY reading{$day} "">
+<!ENTITY title{$day} "Legacy Code">
+<!ENTITY abbrev{$day} "legacy">
+<!ENTITY reading{$day} "<reading>SaaS 9, 10.4-10.9</reading>">
 <!ENTITY due{$day} "">
 
 +day
-<!ENTITY title{$day} "Codes of Ethics">
-<!ENTITY abbrev{$day} "ethics">
-<!ENTITY reading{$day} '<reading>Don Gotterbarn, Keith Miller, and Simon Rogerson (October 1999). Computer Society and ACM approve Software Engineering Code of Ethics. <emphasis>IEEE Computer</emphasis> 32(10): 84-88.  <ulink url="https://www.computer.org/cms/Computer.org/Publications/code-of-ethics.pdf"/>.  Peter G. Neumann (February 2015). Inside Risks: Far-sighted thinking about deleterious computer-related events. <emphasis>CACM</emphasis> 59 (2): 30-33. <ulink url="http://www.csl.sri.com/users/neumann/cacm235.pdf"/>.  ACM Council (October 1992).  ACM Code of Ethics and Professional Behavior. <ulink url="http://www.acm.org/about/code-of-ethics/"/>.</reading>'>
+<!ENTITY title{$day} "Refactoring">
+<!ENTITY abbrev{$day} "refactoring">
+<!ENTITY reading{$day} "">
 <!ENTITY due{$day} "">
 
 +day
@@ -107,20 +118,8 @@
 <!ENTITY week06 "Miscellaneous">
 
 +day
-<!ENTITY title{$day} "Legacy Code">
-<!ENTITY abbrev{$day} "legacy">
-<!ENTITY reading{$day} "<reading>SaaS 9, 10.4-10.9</reading>">
-<!ENTITY due{$day} "">
-
-+day
 <!ENTITY title{$day} "UML">
 <!ENTITY abbrev{$day} "uml">
-<!ENTITY reading{$day} "">
-<!ENTITY due{$day} "">
-
-+day
-<!ENTITY title{$day} "TBD">
-<!ENTITY abbrev{$day} "tbd">
 <!ENTITY reading{$day} "">
 <!ENTITY due{$day} "">
 
@@ -129,7 +128,7 @@
 +day
 <!ENTITY title{$day} "Design Patterns for SaaS">
 <!ENTITY abbrev{$day} "saas-patterns">
-<!ENTITY reading{$day} "<reading>SaaS {$day}</reading>">
+<!ENTITY reading{$day} "<reading>SaaS 11</reading>">
 <!ENTITY due{$day} "">
 
 +day

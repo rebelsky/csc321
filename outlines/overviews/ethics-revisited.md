@@ -1,4 +1,3 @@
 * Writing prompt.
-* Three articles.
-* Open questions.
-* Possible approaches to prompt.
+* Codes of ethics, revisited.
+* Planing for the paper.

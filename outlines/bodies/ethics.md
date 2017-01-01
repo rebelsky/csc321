@@ -1,6 +1,3 @@
-Ugly Code, Revisited
---------------------
-
 Professional Codes of Ethics
 ----------------------------
 
@@ -10,26 +7,63 @@ Professional Codes of Ethics
 * Would you sign?
 * How do we enforce?
 
-Quotes 
-------
+Additional Issues
+-----------------
 
-"I don't see anything morally wrong with accessing systems without
-permission - it's like trespassing in an abandoned house.  Would ACM
-say Edward Snowden was malicious in his actions?"
+A. There were some allusions to considering who has access to
+computing-related products and education and the forms this access
+takes, but I would have liked to see a more explicit treatment and an
+acknowledgement that this status quo is not a static, natural phenomenon,
+but one that is actively enforced and reproduced.
 
-"I really liked that the Code of ethics included the 8th principle,
-Self. It’s good to see that they are encouraging SW devs to continuously
-learn, change, grow, and become more than what they are currently. Also,
-the general moral imperatives of ACM’s code of ethics surprised me
-because it reminded me of the hippocratic oath. It’s really nice to
-see that they’re promoting people to be a nice person in general as
-well as an environmentally conscious person!"
+B. I like to think that coding is potentially one of the best ways to create
+change in today's technological world for the better.
 
-"3.5 said to articulate and support policies that protect the dignity of users and others affected by a computing system, what happens if programmers are told otherwise by higher authority like the case of Apple and the government with privacy?"
+C. As I just had implicit bias training, it is cool to see that it is mentioned in the reading to not discriminate others through coding. 
 
-"The ordering of some of the code of ethics principles was somewhat surprising at first.  Before having read it, I would have assumed that the obligation to the client would be first, and the fact that the obligation to the profession comes before that of yourself seems somewhat odd to me."
+D. About the entire ethics in computing thing, I think the primary point,
+that software should contribute to society and well being is almost entire
+ethics agnostic in the vast majority of cases. After all, I can think of
+far more cases where someone as a developer would undermine society and
+civil rights by working for a profitable firm than actually help tackle
+some of the major issues of today.
 
-"I was very positively surprised by how the Code of Ethics specifies developers' responsibilities when it comes to software whose malfunction is potentially catastrophic. It is very important that this is provided in the evolving field of software engineering."
+E. I would appreciate discussing how we can start bringing some of these
+practices more into our department and community. I enjoyed learning about
+ethics in the context of software engineering and would be curious to see
+how well professionals actually measure up to some of these standards. I
+wish I had more time to dig into the material.
+
+F.  I guess with regards to the second link, those are some very broad
+concerns. Being the novices we are, how do we situate ourselves in
+those problems? I agree that something like healthcare information is
+very sensitive and should be protected, but although I might agree,
+that doesn't seem very pragmatic.
+
+G. I would like to discuss about encryption and if there are encryption
+algorithms we can take advantage of in the ruby programming language.
+
+H. I would like to discuss the idea of global surveillance and where to
+draw the line.  It's a grey area for me and I'd like to get more opinions
+on it.
+
+I. In the "Computer Society and ACM Approve Software Engineering Code of
+Ethics" reading, it seems to me that the idea about helping each other
+in developing software is widely adopted by the open source community
+but not some corporations.
+
+J. I think most of the ethics code is basic courtesy. If you do a job for
+someone, you obviously shouldn’t half do it. When you create software,
+you obviously should cite sources and where you got ideas from (as we
+have been doing in Grinnell), and you should take responsibility for any
+errors in your program and actively work towards making it better. It's
+not just acting ethically, but it is being a good person and programmer.
+
+K. Despite the fact that the second reading ends with the line "In
+summary, without being a predictor of doom...", I'm now very vividly
+feeling like we're all going to suffer a horrible catastrophe that
+cripples our current society in the near future (approx 5-15 years). Not
+a good feeling.
 
 Ethics and Agile
 ----------------

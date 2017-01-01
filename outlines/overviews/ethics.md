@@ -1,4 +1,3 @@
-* Ugly Code, Revisited.
 * Professional Codes of Ethics.
-* Comments From Students.
+* Additional Discussion Topics (suggested by students).
 * Agile and Ethical.

@@ -1,1 +1,1 @@
-We conclude the class in the normal fashion.
+We conclude the class in something like the normal fashion.

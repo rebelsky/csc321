@@ -1,1 +1,1 @@
-We revisit issues of models and databases.
+We consider issues of models and databases.

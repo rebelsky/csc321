@@ -1,11 +1,3 @@
-A Quick Overview of Ruby
-------------------------
-
-* Modern programming language.
-* "One" designer.
-* Imperative, functional, and OOP characteristics.
-* Good at "Get the job done quickly."
-
 Setting Up Your First Rails App
 -------------------------------
 

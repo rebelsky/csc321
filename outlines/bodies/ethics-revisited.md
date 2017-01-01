@@ -1,8 +1,10 @@
 Writing Prompt
 --------------
 
-Write a short essay reflecting on the ethics of engineering software as
-a service, due the last day of class.
+Write a short essay reflecting on some ethic of software engineering (e.g.,
+ethics of software engineering as a service).
+
+Due: Friday, two weeks after break.
 
 Parameters
 
@@ -14,9 +16,19 @@ Parameters
 * Use APA or ACM style for your citations.
 * Use a 10-12 point font and double spacing (about 2-3 pages). Do not use a separate cover page.
 * Submit the final version of your essay via email to me by 11:00 p.m. on November 24.
-* You will have the opportunity to revise your essay once during finals' week.
+* You will have the opportunity to revise your essay once.
 * I will retain a copy of the final version of your essay for the departmental 
   discussions on writing in the CS curriculum and ethics in the CS curriculum.
 
 Codes of Ethics, Applied
 ------------------------
+
+Where should ethics of computing professionals fit within the Grinnell CS
+curriculum?
+
+What do you see as issues in the ethics of SaaS?
+
+Preparing for Essay
+-------------------
+
+Five minutes of personal brainstorming, than group sharing.
